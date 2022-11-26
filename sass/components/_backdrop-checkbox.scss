@@ -1,0 +1,55 @@
+.backdrop__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.backdrop__checkwindow {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.backdrop__checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 7px;
+
+  .backdrop__checkwindow:checked + & {
+    background-color: $accentColor;
+    border-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .backdrop__checkwindow:focus + & {
+    outline: 4px solid rgb(0, 95, 204);
+    outline-style: auto;
+    outline-offset: 2px;
+    border-color: transparent;
+  }
+}
+
+.backdrop__conditions {
+  color: $accentColor;
+}

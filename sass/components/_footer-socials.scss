@@ -1,0 +1,17 @@
+.basement__socials-list {
+  display: flex;
+  gap: 10px;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+}
+.basement__socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $basementLogoColor;
+
+  &:focus,
+  &:hover {
+    background-color: $accentColor;
+  }
+}

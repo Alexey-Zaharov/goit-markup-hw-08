@@ -1,0 +1,15 @@
+.team {
+  background-color: $secondaryBackgroundColor;
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+}
